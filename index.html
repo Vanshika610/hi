@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple quiz 2</title>
+    <style>
+
+        .container {
+            border: 3px solid black;
+            border-radius: 10px;
+            width: 60%;
+            padding: 20px;
+            background-color: lightblue;
+            display: none;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form name="myform">
+        When we exchange our phone no 1st tym?<br>
+        <input type="radio" name="q1" value="a">2nd std<br>
+        <input type="radio" name="q1"value="b">1st std<br>
+        <input type="radio" name="q1" value="c">3rd std<br>
+        <input type="radio" name="q1" value="d">5th std<br>
+        <input type="button" value="submit"  onclick="result()">
+    </form>
+<script>
+  function result(){
+    var count=0;
+    var q1=document.myform.q1.value;
+    if (q1=="a"){
+        alert("Wishing you happiest of birthday🎂🎉✨ and another amazing year around the sun by your side!  ")
+    }
+    else{
+      alert("oops  wrong ans try again!! ")
+    }
+
+  }
+
+</script>
+</<body>
+</html>
